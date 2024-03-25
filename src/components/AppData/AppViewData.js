@@ -47,6 +47,12 @@ import ArmorPenetrationCalculator from "../../pages/DirectoryPages/Sports&Hobbie
 import HighPerformanceBass from "../../pages/DirectoryPages/Sports&Hobbies/HighPerformanceBass/HighPerformanceBass";
 import HorsepowerCalculator from "../../pages/DirectoryPages/Sports&Hobbies/HorsepowerCalculator/HorsepowerCalculator";
 import MilesperHourCalculator from "../../pages/DirectoryPages/Sports&Hobbies/MilesperHourCalculator/MilesperHourCalculator";
+import AstrologicalSignsCalculator from "../../pages/DirectoryPages/Fun/AstrologicalSignsCalculator/AstrologicalSignsCalculator";
+import DaysUntilChristmas from "../../pages/DirectoryPages/Fun/DaysUntilChristmas/DaysUntilChristmas";
+import LoveCompatibilityCalculator from "../../pages/DirectoryPages/Fun/LoveCompatibilityCalculator/LoveCompatibilityCalculator";
+import PhoneNumberConverter from "../../pages/DirectoryPages/Fun/PhoneNumberConverter/PhoneNumberConverter";
+import BACCalculator from "../../pages/DirectoryPages/Health&Fitness/BACCalculator/BACCalculator";
+import BodymassIndexCalculator from "../../pages/DirectoryPages/Health&Fitness/BodymassIndexCalculator/BodymassIndexCalculator";
 
 export const routesData = [
   // home page route
@@ -124,6 +130,30 @@ export const routesData = [
   { path: "/calculate/bass-boat-speed/", component: HighPerformanceBass },
   { path: "/calculate/horsepower/", component: HorsepowerCalculator },
   { path: "/calculate/mph/", component: MilesperHourCalculator },
+
+  // Fun pages
+  {
+    path: "/calculate/astrology/",
+    component: AstrologicalSignsCalculator,
+  },
+  { path: "/calculate/christmas/", component: DaysUntilChristmas },
+  {
+    path: "/calculate/love-compatibility//",
+    component: LoveCompatibilityCalculator,
+  },
+  { path: "/calculate//phone-number/", component: PhoneNumberConverter },
+
+  // Health & Fitness pages
+  {
+    path: "/calculate/bac/",
+    component: BACCalculator,
+  },
+  { path: "/calculate/bodymass/", component: BodymassIndexCalculator },
+  // {
+  //   path: "/calculate/love-compatibility//",
+  //   component: LoveCompatibilityCalculator,
+  // },
+  // { path: "/calculate//phone-number/", component: PhoneNumberConverter },
 ];
 
 export const generateRoutes = () => {

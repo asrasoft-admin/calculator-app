@@ -1,7 +1,13 @@
 import AppView from "./app/AppView";
+import Header from "./components/Header/Header";
 
 const App = () => {
-  return <AppView />;
+  return (
+    <>
+      <Header />
+      <AppView />
+    </>
+  );
 };
 
 export default App;

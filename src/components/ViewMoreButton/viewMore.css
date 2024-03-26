@@ -1,0 +1,10 @@
+.ViewMoreButton {
+  border-radius: 1em !important;
+  margin-top: 1em !important;
+  height: 2em !important;
+  font-size: 18px !important;
+  padding: 0 1.5em !important;
+  margin-right: auto !important;
+  background-color: lightgray !important;
+  border: solid lightgray !important;
+}

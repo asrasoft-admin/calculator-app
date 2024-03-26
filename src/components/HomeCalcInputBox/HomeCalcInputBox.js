@@ -6,7 +6,7 @@ const HomeCalcInputBox = () => {
   return (
     <Box
       sx={{
-        width: "500px !important",
+        width: "100% !important",
         height: "300px !important",
         backgroundColor: "#adb1b5",
         display: "flex",

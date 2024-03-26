@@ -7,4 +7,5 @@
   margin-right: auto !important;
   background-color: lightgray !important;
   border: solid lightgray !important;
+  cursor: pointer;
 }

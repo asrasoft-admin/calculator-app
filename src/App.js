@@ -1,4 +1,5 @@
 import AppView from "./app/AppView";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 
 const App = () => {
@@ -6,6 +7,7 @@ const App = () => {
     <>
       <Header />
       <AppView />
+      <Footer />
     </>
   );
 };

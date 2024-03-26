@@ -12,6 +12,7 @@ const colorCodingSectionOne = [
     icon: (
       <Box
         sx={{
+          marginRight: "10px !important",
           width: "35px !important",
           height: "35px !important",
           borderRadius: "100% !important",
@@ -30,6 +31,7 @@ const colorCodingSectionOne = [
     icon: (
       <Box
         sx={{
+          marginRight: "10px !important",
           width: "35px !important",
           height: "35px !important",
           borderRadius: "100% !important",
@@ -48,6 +50,7 @@ const colorCodingSectionOne = [
     icon: (
       <Box
         sx={{
+          marginRight: "10px !important",
           width: "35px !important",
           height: "35px !important",
           borderRadius: "100% !important",
@@ -66,6 +69,7 @@ const colorCodingSectionOne = [
     icon: (
       <Box
         sx={{
+          marginRight: "10px !important",
           width: "35px !important",
           height: "35px !important",
           borderRadius: "100% !important",
@@ -88,6 +92,7 @@ const colorCodingSectionTwo = [
       <Box
         sx={{
           width: "35px !important",
+          marginRight: "10px !important",
           height: "35px !important",
           borderRadius: "100% !important",
           backgroundColor: "#538018",
@@ -106,6 +111,7 @@ const colorCodingSectionTwo = [
       <Box
         sx={{
           width: "35px !important",
+          marginRight: "10px !important",
           height: "35px !important",
           borderRadius: "100% !important",
           backgroundColor: "#423e3e",
@@ -124,6 +130,7 @@ const colorCodingSectionTwo = [
       <Box
         sx={{
           width: "35px !important",
+          marginRight: "10px !important",
           height: "35px !important",
           borderRadius: "100% !important",
           backgroundColor: "#575757",
@@ -160,7 +167,7 @@ const ClearingButtonsContent = [
         sx={{
           width: "2.9em !important",
           height: "2em !important",
-          borderRadius: "40% !important",
+          borderRadius: "30px !important",
           backgroundColor: "#d81b21",
           display: "flex",
           justifyContent: "center",
@@ -186,7 +193,7 @@ const ClearingButtonsContent = [
         sx={{
           width: "2.9em !important",
           height: "2em !important",
-          borderRadius: "40% !important",
+          borderRadius: "30px !important",
           backgroundColor: "#d81b21",
           display: "flex",
           justifyContent: "center",
@@ -212,7 +219,7 @@ const ClearingButtonsContent = [
         sx={{
           width: "2.9em !important",
           height: "2em !important",
-          borderRadius: "40% !important",
+          borderRadius: "30px !important",
           backgroundColor: "#d81b21",
           display: "flex",
           justifyContent: "center",
@@ -238,7 +245,7 @@ const ClearingButtonsContent = [
         sx={{
           width: "2.9em !important",
           height: "2em !important",
-          borderRadius: "40% !important",
+          borderRadius: "30px !important",
           backgroundColor: "#d81b21",
           display: "flex",
           justifyContent: "center",
@@ -347,19 +354,19 @@ const FunctionButtons = [
           width: "2em !important",
           height: "2em !important",
           borderRadius: "100% !important",
-          backgroundColor: "#157FCC",
+          backgroundColor: "#ba4b58",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           marginRight: "10px !important",
           cursor: "pointer",
           ":hover": {
-            backgroundColor: "#00a3e1",
+            opacity: 0.9,
           },
         }}
       >
         <Typography sx={{ color: "#fff", fontSize: "18px !important" }}>
-          mr
+          √<span>&nbsp;</span>
         </Typography>
       </Box>
     ),
@@ -373,19 +380,19 @@ const FunctionButtons = [
           width: "2em !important",
           height: "2em !important",
           borderRadius: "100% !important",
-          backgroundColor: "#f47c20",
+          backgroundColor: "#ba4b58",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           marginRight: "10px !important",
           cursor: "pointer",
           ":hover": {
-            backgroundColor: "#f99f1b",
+            opacity: 0.9,
           },
         }}
       >
         <Typography sx={{ color: "#fff", fontSize: "18px !important" }}>
-          m-
+          %
         </Typography>
       </Box>
     ),
@@ -416,6 +423,7 @@ const HomeHelpAndTips = ({ isShowHelpContent, setIsShowHelpContent }) => {
                 {colorCodingSectionOne.map((item, index) => {
                   return (
                     <ColorCoding
+                      alignItems="center"
                       key={index}
                       label={item.name}
                       bgColor={item.bgColor}
@@ -429,6 +437,7 @@ const HomeHelpAndTips = ({ isShowHelpContent, setIsShowHelpContent }) => {
                 {colorCodingSectionTwo.map((item, index) => {
                   return (
                     <ColorCoding
+                      alignItems="center"
                       key={index}
                       label={item.name}
                       bgColor={item.bgColor}
@@ -470,13 +479,14 @@ const HomeHelpAndTips = ({ isShowHelpContent, setIsShowHelpContent }) => {
 
             <Box sx={{ paddingTop: "6px !important" }}>
               <ColorCoding
+                alignItems="center"
                 label="You can use the print button to print out the tape."
                 icon={
                   <Box
                     sx={{
                       width: "2.9em !important",
                       height: "2em !important",
-                      borderRadius: "40% !important",
+                      borderRadius: "30px !important",
                       backgroundColor: "#5c5c5c",
                       display: "flex",
                       justifyContent: "center",
@@ -507,7 +517,12 @@ const HomeHelpAndTips = ({ isShowHelpContent, setIsShowHelpContent }) => {
             <Box sx={{ paddingTop: "6px !important" }}>
               {ClearingButtonsContent.map((item, index) => {
                 return (
-                  <ColorCoding key={index} label={item.name} icon={item.icon} />
+                  <ColorCoding
+                    alignItems="center"
+                    key={index}
+                    label={item.name}
+                    icon={item.icon}
+                  />
                 );
               })}
             </Box>
@@ -523,7 +538,12 @@ const HomeHelpAndTips = ({ isShowHelpContent, setIsShowHelpContent }) => {
             <Box sx={{ paddingTop: "6px !important" }}>
               {memoryButtons.map((item, index) => {
                 return (
-                  <ColorCoding key={index} label={item.name} icon={item.icon} />
+                  <ColorCoding
+                    alignItems="center"
+                    key={index}
+                    label={item.name}
+                    icon={item.icon}
+                  />
                 );
               })}
             </Box>
@@ -539,7 +559,12 @@ const HomeHelpAndTips = ({ isShowHelpContent, setIsShowHelpContent }) => {
             <Box sx={{ paddingTop: "6px !important" }}>
               {FunctionButtons.map((item, index) => {
                 return (
-                  <ColorCoding key={index} label={item.name} icon={item.icon} />
+                  <ColorCoding
+                    alignItems="flex-start"
+                    key={index}
+                    label={item.name}
+                    icon={item.icon}
+                  />
                 );
               })}
             </Box>

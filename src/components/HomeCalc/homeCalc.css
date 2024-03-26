@@ -1,0 +1,30 @@
+.Home_Calc_ViewDrop_Btn {
+  display: flex;
+  align-items: center;
+  border-radius: 1em;
+  outline: none !important;
+  border: none !important;
+  padding-left: 7px !important;
+  padding-right: 2px !important;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+  font-weight: 600;
+  color: #fff;
+  background-color: #423e3e;
+  cursor: pointer;
+}
+
+.Home_Calc_Input {
+  width: 130px;
+  height: 10rem !important;
+  border: 0;
+  border-radius: 0.25em;
+  text-align: right;
+  padding-right: 0.2em !important;
+  background: #dee2e6 !important;
+  color: #000000;
+  margin-right: 4px !important;
+  outline: none;
+  margin-top: 0.2em !important;
+  height: 2em !important;
+}

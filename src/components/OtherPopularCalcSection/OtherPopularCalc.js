@@ -43,7 +43,7 @@ const data = [
 
 const OtherPopularCalc = () => {
   return (
-    <Box>
+    <Box sx={{ width: "100%" }}>
       <Box>
         <Typography
           sx={{
@@ -53,7 +53,7 @@ const OtherPopularCalc = () => {
             fontSize: "1.4em !important",
             color: "#000 !important",
             fontWeight: "600 !important",
-            width: "400px !important",
+            width: "100% !important",
             textAlign: "center",
           }}
         >
@@ -61,7 +61,13 @@ const OtherPopularCalc = () => {
         </Typography>
       </Box>
 
-      <Box sx={{ display: "flex", paddingTop: "40px !important" }}>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "space-around",
+          paddingTop: "40px !important",
+        }}
+      >
         {data.map((item, index) => {
           return (
             <CalcTyper

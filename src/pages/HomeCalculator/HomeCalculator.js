@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { Box } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import HomeCalcInputBox from "../../components/HomeCalcInputBox/HomeCalcInputBox";
 import TryOurBanner from "../../components/TryOurBanner/TryOurBanner";
 import OtherPopularCalc from "../../components/OtherPopularCalcSection/OtherPopularCalc";
 import HomeCalc from "../../components/HomeCalc/HomeCalc";
-import HomeAccordion from "../../components/HomeAccordion/HomeAccordion";
 import HomeHelpAndTips from "../../components/HomeHelpAndTips/HomeHelpAndTips";
 import HomeHelpWithFraction from "../../components/HomeHelpWithFraction/HomeHelpWithFraction";
 
@@ -22,22 +21,37 @@ const HomeCalculator = () => {
         sx={{
           paddingTop: "1rem !important",
           paddingLeft: "0.99rem !important",
+          paddingRight: "1.5rem !important",
           paddingBottom: "1em !important",
           display: "flex",
           flexDirection: "row",
         }}
       >
-        <Box>
-          <HomeCalcInputBox />
-        </Box>
+        <Grid container>
+          <Grid item lg={5} xl={5}>
+            <Box>
+              <HomeCalcInputBox />
+            </Box>
+          </Grid>
 
-        <Box>
-          <HomeCalc />
-        </Box>
+          <Grid item lg={3} xl={3}>
+            <Box
+              sx={{
+                paddingTop: "1rem !important",
+                paddingLeft: "0.99rem !important",
+                paddingBottom: "1em !important",
+              }}
+            >
+              <HomeCalc />
+            </Box>
+          </Grid>
 
-        <Box sx={{ marginTop: "1em !important" }}>
-          <OtherPopularCalc />
-        </Box>
+          <Grid item lg={4} xl={4}>
+            <Box sx={{ marginTop: "1em !important" }}>
+              <OtherPopularCalc />
+            </Box>
+          </Grid>
+        </Grid>
       </Box>
 
       <Box

@@ -25,14 +25,22 @@ const HomeCalcInputBox = () => {
         }}
       >
         <Box>
-          <input placeholder="Enter Label" className="homeCalcInputBoxInput" />
+          <input
+            placeholder="Enter Label"
+            className="homeCalcInputBoxInput"
+            style={{ width: "92%" }}
+          />
         </Box>
         <Box
           sx={{
             marginTop: "5px !important",
           }}
         >
-          <input className="homeCalcInputBoxInputTwo" value={0} />
+          <input
+            className="homeCalcInputBoxInputTwo"
+            value={0}
+            style={{ width: "92%" }}
+          />
         </Box>
       </Box>
     </Box>

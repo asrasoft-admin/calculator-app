@@ -15,7 +15,13 @@ const data = [
     color: "#fff",
     width: "auto",
     filter: "",
-    paddingRight: "20px !important",
+    paddingRight: {
+      xl: "20px !important",
+      lg: "20px !important",
+      md: "20px !important",
+      sm: "auto",
+      xs: "auto",
+    },
   },
   {
     id: 2,
@@ -26,7 +32,13 @@ const data = [
     width: "auto",
     filter:
       "invert(100%) sepia(0%) saturate(6781%) hue-rotate(147deg) brightness(102%) contrast(111%)",
-    paddingRight: "40px !important",
+    paddingRight: {
+      xl: "40px !important",
+      lg: "40px !important",
+      md: "40px !important",
+      sm: "auto",
+      xs: "auto",
+    },
   },
   {
     id: 3,
@@ -34,7 +46,7 @@ const data = [
     bgColor: "#ffa502",
     img: <img src={temp} alt="logo" width={32} />,
     color: "#fff",
-    width: "50px",
+    width: { xl: "50px", lg: "50px", md: "50px", sm: "auto", xs: "auto" },
     filter:
       "invert(100%) sepia(0%) saturate(6897%) hue-rotate(194deg) brightness(102%) contrast(111%)",
     paddingRight: "",

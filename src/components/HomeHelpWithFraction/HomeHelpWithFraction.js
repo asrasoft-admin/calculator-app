@@ -69,7 +69,18 @@ const HomeHelpWithFraction = ({ isShowHelpContent, setIsShowHelpContent }) => {
     {
       id: 3,
       icon: (
-        <Box sx={{ display: "flex" }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: {
+              xl: "row",
+              lg: "row",
+              md: "row",
+              sm: "row",
+              xs: "column",
+            },
+          }}
+        >
           <Box
             sx={{
               width: "2.9em !important",
@@ -112,6 +123,13 @@ const HomeHelpWithFraction = ({ isShowHelpContent, setIsShowHelpContent }) => {
               alignItems: "center",
               marginRight: "10px !important",
               cursor: "pointer",
+              marginTop: {
+                xl: "auto",
+                lg: "auto",
+                md: "auto",
+                sm: "0px !important",
+                xs: "5px !important",
+              },
             }}
             onClick={() => setIsChangeFirstSectionButtonColor({ value: "DEC" })}
           >
@@ -134,7 +152,18 @@ const HomeHelpWithFraction = ({ isShowHelpContent, setIsShowHelpContent }) => {
     {
       id: 4,
       icon: (
-        <Box sx={{ display: "flex" }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: {
+              xl: "row",
+              lg: "row",
+              md: "row",
+              sm: "row",
+              xs: "column",
+            },
+          }}
+        >
           <Box
             sx={{
               width: "2.9em !important",
@@ -155,6 +184,13 @@ const HomeHelpWithFraction = ({ isShowHelpContent, setIsShowHelpContent }) => {
               alignItems: "center",
               marginRight: "10px !important",
               cursor: "pointer",
+              marginTop: {
+                xl: "auto",
+                lg: "auto",
+                md: "auto",
+                sm: "auto",
+                xs: "5px !important",
+              },
             }}
             onClick={() =>
               setIsChangeSecondSectionButtonColor({ value: "FRA" })
@@ -188,6 +224,13 @@ const HomeHelpWithFraction = ({ isShowHelpContent, setIsShowHelpContent }) => {
               alignItems: "center",
               marginRight: "10px !important",
               cursor: "pointer",
+              marginTop: {
+                xl: "auto",
+                lg: "auto",
+                md: "auto",
+                sm: "auto",
+                xs: "5px !important",
+              },
             }}
             onClick={() =>
               setIsChangeSecondSectionButtonColor({ value: "DEC" })

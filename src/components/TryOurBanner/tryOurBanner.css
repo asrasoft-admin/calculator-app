@@ -9,6 +9,7 @@
   padding: 0.2em !important;
   padding-left: 0.4em !important;
   font-size: 1.4em !important;
+  word-wrap: break-word;
   font-weight: 500;
   display: flex;
   justify-content: center;

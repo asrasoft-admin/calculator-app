@@ -417,7 +417,18 @@ const HomeHelpAndTips = ({ isShowHelpContent, setIsShowHelpContent }) => {
             contentSx={accordionContentStyle}
           />
 
-          <Box sx={{ paddingTop: "1.5em !important" }}>
+          <Box
+            sx={{
+              paddingTop: "1.5em !important",
+              paddingRight: {
+                lg: "0px",
+                xl: "0px",
+                md: "0px",
+                sm: "0px",
+                xs: "4.2rem !important",
+              },
+            }}
+          >
             <Grid container spacing={12}>
               <Grid item lg={5}>
                 {colorCodingSectionOne.map((item, index) => {

@@ -24,7 +24,7 @@ const Footer = () => {
         }}
       >
         <Grid container>
-          <Grid item lg={4} md={4} sm={4} xs={4}>
+          <Grid item lg={4} md={4} sm={4} xs={12}>
             <Box
               sx={{
                 display: "flex",
@@ -40,7 +40,13 @@ const Footer = () => {
                   fontSize: "19px",
                   fontWeight: "500",
                   position: "relative",
-                  top: "21px",
+                  top: {
+                    xl: "21px",
+                    lg: "21px",
+                    md: "21px",
+                    sm: "21px",
+                    xs: "auto",
+                  },
                 }}
               >
                 About Us
@@ -52,7 +58,13 @@ const Footer = () => {
                   fontSize: "19px",
                   fontWeight: "500",
                   position: "relative",
-                  top: "21px",
+                  top: {
+                    xl: "21px",
+                    lg: "21px",
+                    md: "21px",
+                    sm: "21px",
+                    xs: "auto",
+                  },
                 }}
               >
                 Privacy Statement
@@ -64,14 +76,20 @@ const Footer = () => {
                   fontSize: "19px",
                   fontWeight: "500",
                   position: "relative",
-                  top: "21px",
+                  top: {
+                    xl: "21px",
+                    lg: "21px",
+                    md: "21px",
+                    sm: "21px",
+                    xs: "auto",
+                  },
                 }}
               >
                 Terms of Service
               </Typography>
             </Box>
           </Grid>
-          <Grid item lg={4} md={4} sm={4} xs={3}>
+          <Grid item lg={4} md={4} sm={4} xs={12}>
             <Box
               sx={{
                 display: "flex",
@@ -87,14 +105,20 @@ const Footer = () => {
                   fontSize: "19px",
                   fontWeight: "500",
                   position: "relative",
-                  top: "21px",
+                  top: {
+                    xl: "21px",
+                    lg: "21px",
+                    md: "21px",
+                    sm: "21px",
+                    xs: "auto",
+                  },
                 }}
               >
                 Directory
               </Typography>
             </Box>
           </Grid>
-          <Grid item lg={4} md={4} sm={4} xs={3}>
+          <Grid item lg={4} md={4} sm={4} xs={12}>
             <Box
               sx={{
                 display: "flex",
@@ -110,7 +134,13 @@ const Footer = () => {
                   fontSize: "19px",
                   fontWeight: "500",
                   position: "relative",
-                  top: "21px",
+                  top: {
+                    xl: "21px",
+                    lg: "21px",
+                    md: "21px",
+                    sm: "21px",
+                    xs: "auto",
+                  },
                 }}
               >
                 Contact Us
@@ -123,10 +153,23 @@ const Footer = () => {
       <Box
         sx={{
           width: "100%",
-          height: "80px",
+          height: {
+            xl: "80px",
+            lg: "80px",
+            md: "80px",
+            sm: "80px",
+            xs: "auto",
+          },
           display: "flex",
           justifyContent: "center",
           alignItems: "flex-end",
+          paddingTop: {
+            xl: "auto",
+            lg: "auto",
+            md: "auto",
+            sm: "auto",
+            xs: "7px !important",
+          },
         }}
       >
         <Typography>Copyright © calculator.com 1996-2024</Typography>

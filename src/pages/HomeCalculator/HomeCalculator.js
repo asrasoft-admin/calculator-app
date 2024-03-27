@@ -23,18 +23,30 @@ const HomeCalculator = () => {
           paddingLeft: "0.99rem !important",
           paddingRight: "1.5rem !important",
           paddingBottom: "1em !important",
-          display: "flex",
-          flexDirection: "row",
         }}
       >
-        <Grid container>
-          <Grid item lg={5} xl={5}>
+        <Grid
+          container
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: {
+              xl: "space-around !important",
+              lg: "center !important",
+              md: "space-around !important",
+              sm: "center !important",
+              xs: "center !important",
+            },
+            alignItems: "center",
+          }}
+        >
+          <Grid item lg={5} xl={5} md={6} sm={12} xs={12}>
             <Box>
               <HomeCalcInputBox />
             </Box>
           </Grid>
 
-          <Grid item lg={3} xl={3}>
+          <Grid item lg={3} xl={3} md={4} sm={12} xs={12}>
             <Box
               sx={{
                 paddingTop: "1rem !important",
@@ -46,7 +58,7 @@ const HomeCalculator = () => {
             </Box>
           </Grid>
 
-          <Grid item lg={4} xl={4}>
+          <Grid item lg={4} xl={4} md={5} sm={12} xs={12}>
             <Box sx={{ marginTop: "1em !important" }}>
               {/* other */}
               <OtherPopularCalc />
@@ -57,21 +69,33 @@ const HomeCalculator = () => {
 
       <Box
         sx={{
-          width: "65%",
-          paddingTop: "1rem !important",
-          paddingBottom: "1em !important",
-          paddingLeft: "0.99rem !important",
+          paddingRight: "3rem !important",
         }}
       >
-        <HomeHelpAndTips
-          isShowHelpContent={isShowHelpContent}
-          setIsShowHelpContent={setIsShowHelpContent}
-        />
+        <Box
+          sx={{
+            width: {
+              xl: "65% !important",
+              lg: "65% !important",
+              md: "65% !important",
+              sm: "100%",
+              xs: "100%",
+            },
+            paddingTop: "1rem !important",
+            paddingBottom: "1em !important",
+            paddingLeft: "0.99rem !important",
+          }}
+        >
+          <HomeHelpAndTips
+            isShowHelpContent={isShowHelpContent}
+            setIsShowHelpContent={setIsShowHelpContent}
+          />
 
-        <HomeHelpWithFraction
-          isShowHelpContent={isShowHelpContentTwo}
-          setIsShowHelpContent={setIsShowHelpContentTwo}
-        />
+          <HomeHelpWithFraction
+            isShowHelpContent={isShowHelpContentTwo}
+            setIsShowHelpContent={setIsShowHelpContentTwo}
+          />
+        </Box>
       </Box>
     </div>
   );

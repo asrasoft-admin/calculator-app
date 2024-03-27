@@ -718,13 +718,24 @@ const calcFivethRow = [
 const HomeCalc = () => {
   return (
     <Box>
-      <Box>
-        <button className="Home_Calc_ViewDrop_Btn">
-          View <ArrowDropDownIcon />
-        </button>
-      </Box>
-
-      <Box>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: {
+            xl: "flex-start",
+            lg: "flex-start",
+            md: "flex-start",
+            sm: "center",
+            xs: "center",
+          },
+        }}
+      >
+        <Box sx={{ paddingRight: "14rem !important" }}>
+          <button className="Home_Calc_ViewDrop_Btn">
+            View <ArrowDropDownIcon />
+          </button>
+        </Box>
         <Box sx={{ display: "flex" }}>
           {calcFirstRow.map((item, index) => {
             return <Box key={index}>{item.icon}</Box>;

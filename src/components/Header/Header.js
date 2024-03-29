@@ -82,8 +82,15 @@ const Header = () => {
   };
 
   const handleMenuItemClick = (event, index) => {
-    setSelectedIndex(index);
-    setAnchorEl(null);
+    if (index === 0) {
+      window.location.href = "/fractions";
+      setSelectedIndex(index);
+      setAnchorEl(null);
+    } else if (index === 1) {
+      window.location.href = "/scientific";
+      setSelectedIndex(index);
+      setAnchorEl(null);
+    }
   };
 
   const handleClose = () => {
@@ -230,7 +237,6 @@ const Header = () => {
     };
   }, []);
 
-  console.log(isMobile);
   return (
     <nav className="nav-bar">
       <a className="header-a-one" href="/">

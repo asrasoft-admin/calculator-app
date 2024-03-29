@@ -2,7 +2,7 @@ import React from "react";
 import { Box } from "@mui/material";
 import "./homeCalcInputBox.css";
 
-const HomeCalcInputBox = () => {
+const HomeCalcInputBox = ({ calculatorValue }) => {
   return (
     <Box
       sx={{
@@ -38,8 +38,9 @@ const HomeCalcInputBox = () => {
         >
           <input
             className="homeCalcInputBoxInputTwo"
-            value={0}
             style={{ width: "92%" }}
+            maxLength={16}
+            value={calculatorValue ? calculatorValue : "0"}
           />
         </Box>
       </Box>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Box, Grid } from "@mui/material";
 import HomeCalcInputBox from "../../components/HomeCalcInputBox/HomeCalcInputBox";
 import TryOurBanner from "../../components/TryOurBanner/TryOurBanner";
@@ -6,10 +6,12 @@ import OtherPopularCalc from "../../components/OtherPopularCalcSection/OtherPopu
 import HomeCalc from "../../components/HomeCalc/HomeCalc";
 import HomeHelpAndTips from "../../components/HomeHelpAndTips/HomeHelpAndTips";
 import HomeHelpWithFraction from "../../components/HomeHelpWithFraction/HomeHelpWithFraction";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 const HomeCalculator = () => {
   const [isShowHelpContent, setIsShowHelpContent] = useState(false);
   const [isShowHelpContentTwo, setIsShowHelpContentTwo] = useState(false);
+  const [calculatorValue, setCalculatorValue] = useState("");
 
   return (
     <div>
@@ -42,7 +44,7 @@ const HomeCalculator = () => {
         >
           <Grid item lg={5} xl={5} md={6} sm={12} xs={12}>
             <Box>
-              <HomeCalcInputBox />
+              <HomeCalcInputBox calculatorValue={calculatorValue} />
             </Box>
           </Grid>
 
@@ -54,7 +56,17 @@ const HomeCalculator = () => {
                 paddingBottom: "1em !important",
               }}
             >
-              <HomeCalc />
+              <HomeCalc
+                calculatorValue={calculatorValue}
+                setCalculatorValue={setCalculatorValue}
+                viewBtn={
+                  <Box>
+                    <button className="Home_Calc_ViewDrop_Btn">
+                      View <ArrowDropDownIcon />
+                    </button>
+                  </Box>
+                }
+              />
             </Box>
           </Grid>
 

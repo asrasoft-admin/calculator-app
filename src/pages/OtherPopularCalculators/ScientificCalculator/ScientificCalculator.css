@@ -1,0 +1,22 @@
+.Scientific_Calc_ViewDrop_Btn {
+  display: flex;
+  align-items: center;
+  border-radius: 10em;
+  outline: none !important;
+  border: none !important;
+  padding: 8px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  font-weight: 600;
+  color: #fff;
+  background-color: #423e3e;
+  cursor: pointer;
+}
+
+.Scientific_Calc_ViewDrop_Btn:hover {
+  background-color: #2f2b2b;
+}
+
+.Scientific_Label {
+  margin-left: 10px !important;
+}

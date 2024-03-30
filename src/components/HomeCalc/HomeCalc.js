@@ -10,6 +10,7 @@ const HomeCalc = ({
   viewBtn,
   constantsBtn,
   topButtons,
+  menuButtons,
 }) => {
   const calcThirdRow = [
     {
@@ -784,11 +785,35 @@ const HomeCalc = ({
             display: "flex",
             marginTop: "3px !important",
             marginBottom: "3px !important",
+            width: "280px",
           }}
         >
           {topButtons &&
             topButtons.map((item, index) => {
               return <>{item.icon}</>;
+            })}
+        </Box>
+
+        <Box
+          sx={{
+            display: "flex",
+            marginTop: "3px !important",
+            marginBottom: "3px !important",
+            flexWrap: "wrap",
+            width: "280px",
+          }}
+        >
+          {menuButtons &&
+            menuButtons.map((item, index) => {
+              return (
+                <Box
+                  sx={{
+                    marginTop: "4px !important",
+                  }}
+                >
+                  {item.icon}
+                </Box>
+              );
             })}
         </Box>
 

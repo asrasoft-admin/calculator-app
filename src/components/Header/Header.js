@@ -90,6 +90,10 @@ const Header = () => {
       window.location.href = "/scientific";
       setSelectedIndex(index);
       setAnchorEl(null);
+    } else if (index === 2) {
+      window.location.href = "/newcalc";
+      setSelectedIndex(index);
+      setAnchorEl(null);
     }
   };
 
@@ -102,11 +106,7 @@ const Header = () => {
       return (
         <>
           <div>
-            <List
-              component="nav"
-              aria-label="Device settings"
-              sx={{ bgcolor: "background.paper", padding: 20 }}
-            >
+            <List component="nav" aria-label="Device settings" sx={{ bgcolor: "background.paper", padding: 20 }}>
               <ListItemButton
                 id="lock-button"
                 aria-haspopup="listbox"
@@ -149,10 +149,7 @@ const Header = () => {
           </div>
           <div className="header-last-section">
             <p className="header-light">Light</p>
-            <FormControlLabel
-              control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
-              label=""
-            />
+            <FormControlLabel control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />} label="" />
             <p className="header-dark">Dark</p>
           </div>
         </>
@@ -165,11 +162,7 @@ const Header = () => {
       return (
         <>
           <div>
-            <List
-              component="nav"
-              aria-label="Device settings"
-              sx={{ bgcolor: "background.paper", padding: 20 }}
-            >
+            <List component="nav" aria-label="Device settings" sx={{ bgcolor: "background.paper", padding: 20 }}>
               <ListItemButton
                 id="lock-button"
                 aria-haspopup="listbox"
@@ -212,10 +205,7 @@ const Header = () => {
           </div>
           <div className="header-last-section">
             <p className="header-light">Light</p>
-            <FormControlLabel
-              control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
-              label=""
-            />
+            <FormControlLabel control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />} label="" />
             <p className="header-dark">Dark</p>
           </div>
         </>
@@ -250,10 +240,7 @@ const Header = () => {
         </a>
 
         <div>
-          <MenuIcon
-            className="header-menuIcon"
-            onClick={() => setIsShowHeaderContent(!isShowHeaderContent)}
-          />
+          <MenuIcon className="header-menuIcon" onClick={() => setIsShowHeaderContent(!isShowHeaderContent)} />
         </div>
       </div>
 

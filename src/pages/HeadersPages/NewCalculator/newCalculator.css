@@ -1,0 +1,169 @@
+.NewCalculator_Container{
+}
+
+.NewCalculator_Input_Container{
+    vertical-align: bottom !important;
+    text-align: right !important;
+    display: inline-flex !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    width: 90% !important;
+    height: 400px !important;
+    background-color: #dee2e6 !important;
+    margin-top: 10px !important;
+    border-radius: 25px !important;
+}
+
+.NewCalculator_Input_Content{
+    scroll-behavior: smooth !important;
+    transition: all 0.6s ease-in !important;
+    max-width: 44em !important;
+    margin: auto !important;
+    margin-bottom: 0 !important;
+    width: 100% !important;
+}
+
+.NewCalculator_Box{
+    background-color: #cff4fc !important;
+    margin: 2px 3px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px 0px !important;
+    border: 1px solid #b6effb !important;
+    border-radius: 0.375rem !important;
+    padding-right: 10px !important
+}
+
+.setting-tip{
+    background-color: #575767;
+    width: 36px;
+    height: 26px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: -1px !important;
+    margin-left: -1px !important;
+    text-align: center !important;
+}
+
+.setting-tip:hover{
+    color: #000 !important;
+}
+
+.setting-tip:hover .setting-tip-img{
+    filter: invert(100%) sepia(0%) saturate(6781%) hue-rotate(147deg) brightness(0%) contrast(111%);
+}
+
+.setting-tip-img{
+    width: 18px !important;
+    filter: invert(100%) sepia(0%) saturate(6781%) hue-rotate(147deg) brightness(102%) contrast(111%);
+    margin-top: 4px !important;
+}
+
+.NewCalculator_Box_TextArea{
+    display: flex !important;
+    justify-content: space-between !important;
+    flex-wrap: wrap !important;
+    border-radius: 25px !important;
+    transition: Box 0.6s ease-in !important;
+    border: solid rgb(196, 222, 255) !important;
+    border-radius: 25px !important;
+    padding: 0.5em !important;
+    padding-top: 0.5em !important;
+    padding-right: 0.5em !important;
+    margin-bottom: 0.2rem !important;
+    padding-right: 1.5em !important;
+    padding-top: 0.3em !important;
+    overflow: hidden !important;
+    background-color: #ffffff !important;
+    height: 40px;
+    margin-top: 20px !important;
+    border-left-color: #000 !important;
+    border-right-color: #000 !important;
+}
+
+.NewCalculator_Box_TextArea_Main{
+    min-width: 65% !important;
+    margin-bottom: auto !important;
+    margin-top: auto !important;
+}
+
+.NewCalculator_Box_TextArea_Main_Icons{
+    width: 36px;
+    height: 26px;
+    padding-top: 0;
+    font-size: smaller;
+    background-color: #575767;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    user-select: none;
+    text-align: center;
+    padding: 0px 10px !important;
+    margin-left: 5px !important;
+    cursor: pointer;
+}
+
+.NewCalculator_Box_TextArea_Main_Icons_Arrow{
+    width: 18px;
+}
+
+.NewCalculator_Box_TextArea_Main_Icons:hover{
+    color: #000;
+}
+
+.NewCalculator_Box_TextArea_Main_Icons:hover .NewCalculator_Box_TextArea_Main_Icons_Arrow{
+    filter: invert(100%) sepia(0%) saturate(6781%) hue-rotate(147deg) brightness(0%) contrast(111%);
+}
+
+.NewCalculator_Box_TextArea_Main_Content{
+    width: 62%;
+}
+
+.NewCalculator_Box_TextArea_Main_Icons_Container{
+    margin-bottom: 0 !important;
+    margin-top: 15px !important;
+    text-align: right !important;
+    margin-right: 0 !important;
+    margin-left: 60px !important;
+}
+
+.NewCalculator_Box_TextArea_Main_Two{
+    text-align: left !important;
+    padding: 0.5rem !important;
+    width: 100% !important;
+}
+
+.NewCalculator_TextArea{
+    width: 100%;
+    border: none !important;
+    margin-top: 5px !important;
+    resize: none !important;
+}
+
+.NewCalculator_TextArea:focus{
+    border: none !important;
+    outline: none !important;
+}
+
+.NewCalculator_Box_TextArea_Content{
+    margin-right: 10px !important;
+    margin-top: 5px !important;
+}
+
+.NewCalculator_Box_TextArea_Label{
+    margin-left: -0.6em;
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 2em;
+    padding: 0.2em;
+    background: #c4deff;
+    font-size: 10px;
+    text-align: center;
+    line-height: 12px;
+    vertical-align: top;
+}

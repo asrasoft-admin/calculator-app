@@ -63,7 +63,6 @@ const Header = () => {
     "Standard Tape calculator",
     "Scientific calculator",
     "Advanced Scientific calculator (beta)",
-    "",
     "Financial",
     "Fun",
     "Health & Fitness",
@@ -81,6 +80,26 @@ const Header = () => {
     setAnchorEl(event.currentTarget);
   };
 
+  const selectedTheme = localStorage.getItem("selectedTheme");
+
+  const handleDarkMode = () => {
+    document.querySelector("body").setAttribute("data-theme", "dark");
+    localStorage.setItem("selectedTheme", "dark");
+  };
+
+  const handleLightMode = () => {
+    document.querySelector("body").setAttribute("data-theme", "light");
+    localStorage.setItem("selectedTheme", "light");
+  };
+
+  const toggleTheme = (e) => {
+    if (e.target.checked) {
+      handleDarkMode();
+    } else {
+      handleLightMode();
+    }
+  };
+
   const handleMenuItemClick = (event, index) => {
     if (index === 0) {
       window.location.href = "/fractions";
@@ -94,6 +113,34 @@ const Header = () => {
       window.location.href = "/newcalc";
       setSelectedIndex(index);
       setAnchorEl(null);
+    } else if (index === 3) {
+      window.location.href = "/directory/?show=Financial";
+      setSelectedIndex(index);
+      setAnchorEl(null);
+    } else if (index === 4) {
+      window.location.href = "/directory/?show=Fun";
+      setSelectedIndex(index);
+      setAnchorEl(null);
+    } else if (index === 5) {
+      window.location.href = "/directory/?show=Health";
+      setSelectedIndex(index);
+      setAnchorEl(null);
+    } else if (index === 6) {
+      window.location.href = "/directory/?show=Math";
+      setSelectedIndex(index);
+      setAnchorEl(null);
+    } else if (index === 7) {
+      window.location.href = "/directory/?show=Sports";
+      setSelectedIndex(index);
+      setAnchorEl(null);
+    } else if (index === 8) {
+      window.location.href = "/directory/?show=Converters";
+      setSelectedIndex(index);
+      setAnchorEl(null);
+    } else if (index === 9) {
+      window.location.href = "/directory/?show=Other";
+      setSelectedIndex(index);
+      setAnchorEl(null);
     }
   };
 
@@ -101,12 +148,20 @@ const Header = () => {
     setAnchorEl(null);
   };
 
+  if (selectedTheme === "dark") {
+    handleDarkMode();
+  }
+
   const showComponent = () => {
     if (isShowHeaderContent) {
       return (
         <>
           <div>
-            <List component="nav" aria-label="Device settings" sx={{ bgcolor: "background.paper", padding: 20 }}>
+            <List
+              component="nav"
+              aria-label="Device settings"
+              sx={{ bgcolor: "background.paper", padding: 20 }}
+            >
               <ListItemButton
                 id="lock-button"
                 aria-haspopup="listbox"
@@ -149,7 +204,16 @@ const Header = () => {
           </div>
           <div className="header-last-section">
             <p className="header-light">Light</p>
-            <FormControlLabel control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />} label="" />
+            <FormControlLabel
+              control={
+                <MaterialUISwitch
+                  sx={{ m: 1 }}
+                  defaultChecked={selectedTheme === "dark"}
+                  onChange={toggleTheme}
+                />
+              }
+              label=""
+            />
             <p className="header-dark">Dark</p>
           </div>
         </>
@@ -162,7 +226,11 @@ const Header = () => {
       return (
         <>
           <div>
-            <List component="nav" aria-label="Device settings" sx={{ bgcolor: "background.paper", padding: 20 }}>
+            <List
+              component="nav"
+              aria-label="Device settings"
+              sx={{ bgcolor: "background.paper", padding: 20 }}
+            >
               <ListItemButton
                 id="lock-button"
                 aria-haspopup="listbox"
@@ -205,7 +273,16 @@ const Header = () => {
           </div>
           <div className="header-last-section">
             <p className="header-light">Light</p>
-            <FormControlLabel control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />} label="" />
+            <FormControlLabel
+              control={
+                <MaterialUISwitch
+                  sx={{ m: 1 }}
+                  defaultChecked={selectedTheme === "dark"}
+                  onChange={toggleTheme}
+                />
+              }
+              label=""
+            />
             <p className="header-dark">Dark</p>
           </div>
         </>
@@ -230,17 +307,20 @@ const Header = () => {
   return (
     <nav className="nav-bar">
       <a className="header-a-one" href="/">
-        <p>calculator.com</p>
-        <span>®</span>
+        <p className="calc-text">calculator.com</p>
+        <span className="calc-text">®</span>
       </a>
       <div className="header-container">
         <a className="header-a" href="/">
-          <p>calculator.com</p>
-          <span>®</span>
+          <p className="calc-text">calculator.com</p>
+          <span className="calc-text">®</span>
         </a>
 
         <div>
-          <MenuIcon className="header-menuIcon" onClick={() => setIsShowHeaderContent(!isShowHeaderContent)} />
+          <MenuIcon
+            className="header-menuIcon"
+            onClick={() => setIsShowHeaderContent(!isShowHeaderContent)}
+          />
         </div>
       </div>
 

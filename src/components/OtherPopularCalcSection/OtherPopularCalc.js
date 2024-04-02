@@ -11,6 +11,9 @@ const data = [
     id: 1,
     name: "Percent calculator",
     bgColor: "#ba4b58",
+    onClick: () => {
+      window.location.href = "/calculate/percentage/";
+    },
     img: <Typography sx={{ fontSize: 24 }}>%</Typography>,
     color: "#fff",
     width: "auto",
@@ -27,10 +30,14 @@ const data = [
     id: 2,
     name: "Love calculator",
     bgColor: "#f171ab",
+    onClick: () => {
+      window.location.href = "/calculate/love/";
+    },
     img: <img src={heart} alt="logo" width={32} />,
     color: "#fff",
     width: "auto",
-    filter: "invert(100%) sepia(0%) saturate(6781%) hue-rotate(147deg) brightness(102%) contrast(111%)",
+    filter:
+      "invert(100%) sepia(0%) saturate(6781%) hue-rotate(147deg) brightness(102%) contrast(111%)",
     paddingRight: {
       xl: "40px !important",
       lg: "40px !important",
@@ -43,15 +50,19 @@ const data = [
     id: 3,
     name: "Temperature calculator",
     bgColor: "#ffa502",
+    onClick: () => {
+      window.location.href = "/calculate/temperature/";
+    },
     img: <img src={temp} alt="logo" width={32} />,
     color: "#fff",
     width: { xl: "50px", lg: "50px", md: "50px", sm: "auto", xs: "auto" },
-    filter: "invert(100%) sepia(0%) saturate(6897%) hue-rotate(194deg) brightness(102%) contrast(111%)",
+    filter:
+      "invert(100%) sepia(0%) saturate(6897%) hue-rotate(194deg) brightness(102%) contrast(111%)",
     paddingRight: "",
   },
 ];
 
-const OtherPopularCalc = ({ backgroundColor }) => {
+const OtherPopularCalc = ({ backgroundColor, viewMoreOnClick }) => {
   return (
     <Box sx={{ width: "100%" }}>
       <Box>
@@ -89,6 +100,7 @@ const OtherPopularCalc = ({ backgroundColor }) => {
               width={item.width}
               filter={item.filter}
               paddingRight={item.paddingRight}
+              onClick={item.onClick}
             />
           );
         })}
@@ -100,6 +112,7 @@ const OtherPopularCalc = ({ backgroundColor }) => {
           justifyContent: "center",
           alignItems: "center",
         }}
+        onClick={viewMoreOnClick}
       >
         <ViewMoreButton />
       </Box>

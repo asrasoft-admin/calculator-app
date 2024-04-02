@@ -48,6 +48,9 @@ const Footer = () => {
                     xs: "auto",
                   },
                 }}
+                onClick={() => {
+                  window.location.href = "/site/about";
+                }}
               >
                 About Us
               </Typography>
@@ -66,6 +69,9 @@ const Footer = () => {
                     xs: "auto",
                   },
                 }}
+                onClick={() => {
+                  window.location.href = "/site/privacy";
+                }}
               >
                 Privacy Statement
               </Typography>
@@ -83,6 +89,9 @@ const Footer = () => {
                     sm: "21px",
                     xs: "auto",
                   },
+                }}
+                onClick={() => {
+                  window.location.href = "/site/terms";
                 }}
               >
                 Terms of Service
@@ -113,6 +122,9 @@ const Footer = () => {
                     xs: "auto",
                   },
                 }}
+                onClick={() => {
+                  window.location.href = "/directory/";
+                }}
               >
                 Directory
               </Typography>
@@ -141,6 +153,9 @@ const Footer = () => {
                     sm: "21px",
                     xs: "auto",
                   },
+                }}
+                onClick={() => {
+                  window.location.href = "/site/contact";
                 }}
               >
                 Contact Us

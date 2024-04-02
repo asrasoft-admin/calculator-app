@@ -4,7 +4,7 @@
   border-color: 0.01em solid #dee2e6 !important;
   font-size: 1.122em;
   /* color: var(--color-nav) !important; */
-  background-color: #dee2e6 !important;
+  background-color: var(--header_bar_color) !important;
   padding: 1rem 5rem !important;
   display: flex;
   align-items: center;
@@ -28,7 +28,7 @@
 }
 
 .header-drop-down {
-  background-color: #dee2e6;
+  background-color: var(--header_bar_color);
   display: flex;
 }
 
@@ -49,10 +49,18 @@
 
 .header-light {
   font-size: 1.122em;
+  color: var(--app_text_color);
+}
+
+.calc-text,
+.header-arrow-icon,
+.header-calc-text {
+  color: var(--app_text_color);
 }
 
 .header-dark {
   font-size: 1.122em;
+  color: var(--header_darkText);
 }
 
 .header-menuIcon {

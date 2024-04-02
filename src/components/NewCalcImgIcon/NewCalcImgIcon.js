@@ -2,11 +2,11 @@ import React from "react";
 
 const NewCalcImgIcon = ({ src, alt, isText }) => {
   return (
-    <button className="NewCalculator_Box_TextArea_Main_Icons" style={{ padding: "10px !important" }}>
+    <button className="NewCalcImgIcon" style={{ padding: "10px !important" }}>
       {isText ? (
-        <span>{src}</span>
+        <span className="NewCalcImgIcon_Main">{src}</span>
       ) : (
-        <img src={src} alt={alt} className="NewCalculator_Box_TextArea_Main_Icons_Arrow" />
+        <img src={src} alt={alt} className="NewCalcImgIcon_Main_Icon" />
       )}
     </button>
   );

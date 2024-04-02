@@ -10,6 +10,7 @@ const CalcTyper = ({
   width,
   filter,
   paddingRight,
+  onClick,
 }) => {
   return (
     <Box
@@ -19,6 +20,7 @@ const CalcTyper = ({
         alignItems: "center",
         paddingRight: paddingRight,
       }}
+      onClick={onClick}
     >
       <Box
         sx={{

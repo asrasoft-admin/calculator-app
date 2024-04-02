@@ -77,7 +77,7 @@ export const routesData = [
 
   // header routes
   { path: "/newcalc/", component: NewCalculator },
-  { path: "/Financial/", component: Financial },
+  { path: "/directory/?show=Financial/", component: Financial },
   { path: "/Fun/", component: Fun },
   { path: "/Health/", component: Health },
   { path: "/Math/", component: Math },

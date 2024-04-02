@@ -8,7 +8,7 @@ const TryOurBanner = () => {
       <div className="TryOurBanner_Container_Content">
         <img src={LOGO} alt="label" className="TryOurBanner_IMG" />
         Try our{" "}
-        <a className="TryOurBanner_Advanced">
+        <a className="TryOurBanner_Advanced" href="/newcalc">
           Advanced Scientific calculator (beta).
         </a>
       </div>

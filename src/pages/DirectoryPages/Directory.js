@@ -3,7 +3,7 @@ import React from "react";
 const Directory = () => {
   return (
     <div>
-      <p>Directory</p>
+      <p>here is all Directory pages</p>
     </div>
   );
 };

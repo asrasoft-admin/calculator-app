@@ -7,6 +7,7 @@ import HomeCalc from "../../components/HomeCalc/HomeCalc";
 import HomeHelpAndTips from "../../components/HomeHelpAndTips/HomeHelpAndTips";
 import HomeHelpWithFraction from "../../components/HomeHelpWithFraction/HomeHelpWithFraction";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import "./homeCalculator.css";
 
 const HomeCalculator = () => {
   const [isShowHelpContent, setIsShowHelpContent] = useState(false);
@@ -14,7 +15,7 @@ const HomeCalculator = () => {
   const [calculatorValue, setCalculatorValue] = useState("");
 
   return (
-    <div>
+    <div className="HomeCalculator_Container">
       <Box>
         <TryOurBanner />
       </Box>
@@ -73,7 +74,11 @@ const HomeCalculator = () => {
           <Grid item lg={4} xl={4} md={5} sm={12} xs={12}>
             <Box sx={{ marginTop: "1em !important" }}>
               {/* other */}
-              <OtherPopularCalc />
+              <OtherPopularCalc
+                viewMoreOnClick={() => {
+                  window.location.href = "/directory/";
+                }}
+              />
             </Box>
           </Grid>
         </Grid>

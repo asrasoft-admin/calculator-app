@@ -34,7 +34,7 @@ const tabsData = [
 ];
 
 const NewCalculator = () => {
-  const [activeTab, setActiveTab] = useState({ isActive: false, ind: 0 });
+  const [activeTab, setActiveTab] = useState({ isActive: true, ind: 0 });
 
   return (
     <div className="NewCalculator_Container">
@@ -48,27 +48,18 @@ const NewCalculator = () => {
                     <Box sx={{ marginRight: "10px !important" }}>
                       <b>TIPS</b>
                     </Box>
-                    <CloseIcon
-                      sx={{ cursor: "pointer", ":hover": { color: "#b5b5b5" } }}
-                    />
+                    <CloseIcon sx={{ cursor: "pointer", ":hover": { color: "#b5b5b5" } }} />
                   </Box>
 
                   <Box sx={{ paddingRight: "30px !important" }}>
                     <Typography sx={{ color: "#055160" }}>
-                      Press <span className="setting-tip">?</span> to enable
-                      help mode and click any button to learn more. Press again
-                      to disable.
+                      Press <span className="setting-tip">?</span> to enable help mode and click any button to learn
+                      more. Press again to disable.
                     </Typography>
-                    <Typography
-                      sx={{ paddingTop: "10px !important", color: "#055160" }}
-                    >
+                    <Typography sx={{ paddingTop: "10px !important", color: "#055160" }}>
                       Press{" "}
                       <span className="setting-tip">
-                        <img
-                          src={settingIMG}
-                          className="setting-tip-img"
-                          alt="setting"
-                        />
+                        <img src={settingIMG} className="setting-tip-img" alt="setting" />
                       </span>{" "}
                       for a lot of customizing options.
                     </Typography>
@@ -96,18 +87,10 @@ const NewCalculator = () => {
                       <Typography>1</Typography>
                     </Box> */}
                     <Box className="NewCalculator_Box_TextArea_Main_Icons_Container">
+                      <button className="NewCalculator_Box_TextArea_Main_Icons">a/b</button>
+                      <button className="NewCalculator_Box_TextArea_Main_Icons">DEG</button>
                       <button className="NewCalculator_Box_TextArea_Main_Icons">
-                        a/b
-                      </button>
-                      <button className="NewCalculator_Box_TextArea_Main_Icons">
-                        DEG
-                      </button>
-                      <button className="NewCalculator_Box_TextArea_Main_Icons">
-                        <img
-                          src={arrowIMG}
-                          alt="arrow"
-                          className="NewCalculator_Box_TextArea_Main_Icons_Arrow"
-                        />
+                        <img src={arrowIMG} alt="arrow" className="NewCalculator_Box_TextArea_Main_Icons_Arrow" />
                       </button>
                       <span className="NewCalculator_Box_TextArea_Label">
                         <span>1</span>
@@ -138,12 +121,7 @@ const NewCalculator = () => {
                         marginLeft: item.marginLeft,
                       }}
                     >
-                      <NewCalcImgIcon
-                        key={index}
-                        src={item.icon}
-                        alt="img"
-                        isText={item.isText}
-                      />
+                      <NewCalcImgIcon key={index} src={item.icon} alt="img" isText={item.isText} />
                     </Box>
                   );
                 })}
@@ -157,13 +135,9 @@ const NewCalculator = () => {
                         <button
                           role="tab"
                           className={`tab_button ${
-                            activeTab.isActive && activeTab.ind === index
-                              ? "isActive"
-                              : "isNotActive"
+                            activeTab.isActive && activeTab.ind === index ? "isActive" : "isNotActive"
                           }`}
-                          onClick={() =>
-                            setActiveTab({ isActive: true, ind: index })
-                          }
+                          onClick={() => setActiveTab({ isActive: true, ind: index })}
                         >
                           {item.label}
                         </button>
@@ -175,13 +149,7 @@ const NewCalculator = () => {
             </Box>
           </Box>
         </Grid>
-        <Grid
-          item
-          xl={4}
-          display="flex"
-          justifyContent="flex-end"
-          alignItems="center"
-        >
+        <Grid item xl={4} display="flex" justifyContent="flex-end" alignItems="center">
           <Box>
             <Box>
               <OtherPopularCalc backgroundColor="#fff" />

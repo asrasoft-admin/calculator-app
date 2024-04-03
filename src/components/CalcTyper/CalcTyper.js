@@ -2,16 +2,7 @@ import React from "react";
 import "./calcTyper.css";
 import { Box, Typography } from "@mui/material";
 
-const CalcTyper = ({
-  calcName,
-  bgColor,
-  img,
-  color,
-  width,
-  filter,
-  paddingRight,
-  onClick,
-}) => {
+const CalcTyper = ({ calcName, bgColor, img, color, width, filter, paddingRight, onClick }) => {
   return (
     <Box
       sx={{
@@ -59,6 +50,7 @@ const CalcTyper = ({
             fontWeight: "500 !important",
             cursor: "pointer",
             textAlign: "center",
+            color: "var(--app_text_color) !important",
           }}
         >
           {calcName}

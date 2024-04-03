@@ -6,11 +6,10 @@ const Footer = () => {
   return (
     <Box
       sx={{
-        backgroundColor: "#dee2e6",
+        backgroundColor: "var(--footer_bg) !important",
         width: "100% !important",
         height: "250px !important",
         minHeight: "250px !important",
-        marginTop: "50px !important",
         overflow: "hidden",
       }}
     >
@@ -38,6 +37,7 @@ const Footer = () => {
                   cursor: "pointer",
                   paddingLeft: 0,
                   fontSize: "19px",
+                  color: "var(--footer_text) !important",
                   fontWeight: "500",
                   position: "relative",
                   top: {
@@ -59,6 +59,7 @@ const Footer = () => {
                   cursor: "pointer",
                   paddingLeft: 0,
                   fontSize: "19px",
+                  color: "var(--footer_text) !important",
                   fontWeight: "500",
                   position: "relative",
                   top: {
@@ -80,6 +81,7 @@ const Footer = () => {
                   cursor: "pointer",
                   paddingLeft: 0,
                   fontSize: "19px",
+                  color: "var(--footer_text) !important",
                   fontWeight: "500",
                   position: "relative",
                   top: {
@@ -112,6 +114,7 @@ const Footer = () => {
                   cursor: "pointer",
                   paddingLeft: 0,
                   fontSize: "19px",
+                  color: "var(--footer_text) !important",
                   fontWeight: "500",
                   position: "relative",
                   top: {
@@ -144,6 +147,7 @@ const Footer = () => {
                   cursor: "pointer",
                   paddingLeft: 0,
                   fontSize: "19px",
+                  color: "var(--footer_text) !important",
                   fontWeight: "500",
                   position: "relative",
                   top: {
@@ -175,6 +179,7 @@ const Footer = () => {
             sm: "80px",
             xs: "auto",
           },
+          color: "var(--app_text_color)",
           display: "flex",
           justifyContent: "center",
           alignItems: "flex-end",

@@ -36,8 +36,7 @@ const data = [
     img: <img src={heart} alt="logo" width={32} />,
     color: "#fff",
     width: "auto",
-    filter:
-      "invert(100%) sepia(0%) saturate(6781%) hue-rotate(147deg) brightness(102%) contrast(111%)",
+    filter: "invert(100%) sepia(0%) saturate(6781%) hue-rotate(147deg) brightness(102%) contrast(111%)",
     paddingRight: {
       xl: "40px !important",
       lg: "40px !important",
@@ -56,8 +55,7 @@ const data = [
     img: <img src={temp} alt="logo" width={32} />,
     color: "#fff",
     width: { xl: "50px", lg: "50px", md: "50px", sm: "auto", xs: "auto" },
-    filter:
-      "invert(100%) sepia(0%) saturate(6897%) hue-rotate(194deg) brightness(102%) contrast(111%)",
+    filter: "invert(100%) sepia(0%) saturate(6897%) hue-rotate(194deg) brightness(102%) contrast(111%)",
     paddingRight: "",
   },
 ];
@@ -68,11 +66,11 @@ const OtherPopularCalc = ({ backgroundColor, viewMoreOnClick }) => {
       <Box>
         <Typography
           sx={{
-            backgroundColor: backgroundColor || "#e7e7e7",
+            backgroundColor: backgroundColor || "var(--heading_bar_bg) !important",
             padding: "0.2em !important",
             paddingLeft: "0.4em !important",
             fontSize: "1.4em !important",
-            color: "#000 !important",
+            color: "var(--app_text_color) !important",
             fontWeight: "600 !important",
             width: "100% !important",
             textAlign: "center",

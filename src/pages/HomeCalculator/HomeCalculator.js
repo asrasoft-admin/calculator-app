@@ -99,14 +99,11 @@ const HomeCalculator = () => {
               xs: "100%",
             },
             paddingTop: "1rem !important",
-            paddingBottom: "1em !important",
+            paddingBottom: "5em !important",
             paddingLeft: "0.99rem !important",
           }}
         >
-          <HomeHelpAndTips
-            isShowHelpContent={isShowHelpContent}
-            setIsShowHelpContent={setIsShowHelpContent}
-          />
+          <HomeHelpAndTips isShowHelpContent={isShowHelpContent} setIsShowHelpContent={setIsShowHelpContent} />
 
           <HomeHelpWithFraction
             isShowHelpContent={isShowHelpContentTwo}

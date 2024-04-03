@@ -1,13 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 
-const HomeAccordion = ({
-  title,
-  setIsShowHelpContent,
-  isShowHelpContent,
-  containerSx,
-  contentSx,
-}) => {
+const HomeAccordion = ({ title, setIsShowHelpContent, isShowHelpContent, containerSx, contentSx }) => {
   return (
     <div>
       <Box
@@ -15,7 +9,7 @@ const HomeAccordion = ({
           containerSx
             ? containerSx
             : {
-                backgroundColor: "#bbbec1",
+                backgroundColor: "var(--accordion_bg) !important",
                 width: "100%",
                 height: "8vh",
                 display: "flex",
@@ -33,6 +27,7 @@ const HomeAccordion = ({
                   textDecoration: "underline",
                   fontSize: "20px",
                   fontWeight: "500 !important",
+                  color: "var(--app_text_color) !important",
                   ":hover": {
                     color: "#fff",
                     textDecoration: "none",

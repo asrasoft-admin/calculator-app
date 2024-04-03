@@ -8,7 +8,7 @@ const HomeCalcInputBox = ({ calculatorValue }) => {
       sx={{
         width: "100% !important",
         height: "300px !important",
-        backgroundColor: "#adb1b5",
+        backgroundColor: "var(--home_calc_input_bg)",
         display: "flex",
         alignItems: "flex-end",
         borderRadius: "2px !important",
@@ -19,17 +19,13 @@ const HomeCalcInputBox = ({ calculatorValue }) => {
         sx={{
           width: "100% !important",
           height: "3.3em !important",
-          backgroundColor: "#cccccc",
+          backgroundColor: "var(--home_calc_input_bg_Main) !important",
           display: "flex",
           justifyContent: "space-between",
         }}
       >
         <Box>
-          <input
-            placeholder="Enter Label"
-            className="homeCalcInputBoxInput"
-            style={{ width: "92%" }}
-          />
+          <input placeholder="Enter Label" className="homeCalcInputBoxInput" style={{ width: "92%" }} />
         </Box>
         <Box
           sx={{

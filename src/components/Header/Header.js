@@ -157,11 +157,7 @@ const Header = () => {
       return (
         <>
           <div>
-            <List
-              component="nav"
-              aria-label="Device settings"
-              sx={{ bgcolor: "background.paper", padding: 20 }}
-            >
+            <List component="nav" aria-label="Device settings" sx={{ bgcolor: "background.paper", padding: 20 }}>
               <ListItemButton
                 id="lock-button"
                 aria-haspopup="listbox"
@@ -210,6 +206,7 @@ const Header = () => {
                   sx={{ m: 1 }}
                   defaultChecked={selectedTheme === "dark"}
                   onChange={toggleTheme}
+                  className="toggle-icon"
                 />
               }
               label=""
@@ -226,11 +223,7 @@ const Header = () => {
       return (
         <>
           <div>
-            <List
-              component="nav"
-              aria-label="Device settings"
-              sx={{ bgcolor: "background.paper", padding: 20 }}
-            >
+            <List component="nav" aria-label="Device settings" sx={{ bgcolor: "background.paper", padding: 20 }}>
               <ListItemButton
                 id="lock-button"
                 aria-haspopup="listbox"
@@ -279,6 +272,7 @@ const Header = () => {
                   sx={{ m: 1 }}
                   defaultChecked={selectedTheme === "dark"}
                   onChange={toggleTheme}
+                  className="toggle-icon"
                 />
               }
               label=""
@@ -317,10 +311,7 @@ const Header = () => {
         </a>
 
         <div>
-          <MenuIcon
-            className="header-menuIcon"
-            onClick={() => setIsShowHeaderContent(!isShowHeaderContent)}
-          />
+          <MenuIcon className="header-menuIcon" onClick={() => setIsShowHeaderContent(!isShowHeaderContent)} />
         </div>
       </div>
 

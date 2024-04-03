@@ -1,19 +1,61 @@
 :root {
+  /* app  */
   --body_background: white;
   --body_color: black;
   --link_color: navy;
-  --header_bar_color: #dee2e6;
   --app_text_color: #000;
+
+  /* header */
+  --header_bar_color: #dee2e6;
   --header_darkText: #000;
+  --header_LightText: rgb(116 116 116 / 51%);
+
+  /* home calc input  */
+  --home_calc_input_bg: #adb1b5;
+  --home_calc_input_bg_Main: #cccccc;
+
+  /* home calc  */
+  --calc_input_bg: #dee2e6;
+
+  /* home accordion  */
+  --accordion_bg: rgb(187 190 193);
+
+  /* heading bar */
+  --heading_bar_bg: rgb(231 231 231);
+
+  /* footer accordion  */
+  --footer_bg: #dee2e6 !important;
+  --footer_text: rgb(72 72 72);
 }
 
 [data-theme="dark"] {
+  /* app  */
   --body_background: #282c34;
   --body_color: white;
   --link_color: cyan;
-  --header_bar_color: #3a3b3c;
   --app_text_color: #fff;
+
+  /* header */
+  --header_bar_color: #3a3b3c;
   --header_darkText: rgb(116 116 116);
+  --header_LightText: #fff;
+
+  /* home calc input  */
+  --home_calc_input_bg: #232526;
+  --home_calc_input_bg_Main: #3a3b3c;
+
+   /* home calc  */
+   --calc_input_bg: #3a3b3d;
+
+    /* home accordion  */
+  --accordion_bg: rgb(72 72 72);
+
+    /* heading bar */
+  --heading_bar_bg: rgb(52 51 51);
+
+   /* footer accordion  */
+  --footer_bg: #3a3b3d !important;
+  --footer_text: rgb(72 72 72);
 }
 
 * {

@@ -1,14 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 
-const ColorCoding = ({
-  label,
-  bgColor,
-  hoverBgColor,
-  icon,
-  alignItems,
-  lineHeight,
-}) => {
+const ColorCoding = ({ label, bgColor, hoverBgColor, icon, alignItems, lineHeight }) => {
   return (
     <Box
       sx={{
@@ -24,6 +17,7 @@ const ColorCoding = ({
           display: "flex",
           alignItems: alignItems,
           lineHeight: lineHeight,
+          color: "var(--app_text_color) !important",
         }}
       >
         <Box>{icon}</Box>

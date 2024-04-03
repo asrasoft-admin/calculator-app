@@ -145,7 +145,7 @@ const colorCodingSectionTwo = [
 ];
 
 const accordionContainerStyle = {
-  backgroundColor: "lightgray",
+  backgroundColor: "var(--heading_bar_bg) !important",
   width: "100%",
   height: "7vh",
   display: "flex",
@@ -157,6 +157,7 @@ const accordionContainerStyle = {
 const accordionContentStyle = {
   fontSize: "20px",
   fontWeight: "500 !important",
+  color: "var(--app_text_color) !important",
 };
 
 const ClearingButtonsContent = [
@@ -179,9 +180,7 @@ const ClearingButtonsContent = [
           },
         }}
       >
-        <Typography sx={{ color: "#fff", fontSize: "18px !important" }}>
-          C
-        </Typography>
+        <Typography sx={{ color: "#fff", fontSize: "18px !important" }}>C</Typography>
       </Box>
     ),
     name: "Clear button clears the last input.",
@@ -205,9 +204,7 @@ const ClearingButtonsContent = [
           },
         }}
       >
-        <Typography sx={{ color: "#fff", fontSize: "18px !important" }}>
-          AC
-        </Typography>
+        <Typography sx={{ color: "#fff", fontSize: "18px !important" }}>AC</Typography>
       </Box>
     ),
     name: "All clear button clears the calculator, tape, and resets any functions.",
@@ -231,9 +228,7 @@ const ClearingButtonsContent = [
           },
         }}
       >
-        <Typography sx={{ color: "#fff", fontSize: "18px !important" }}>
-          mc
-        </Typography>
+        <Typography sx={{ color: "#fff", fontSize: "18px !important" }}>mc</Typography>
       </Box>
     ),
     name: "Memory clear button clears the memory.",
@@ -284,9 +279,7 @@ const memoryButtons = [
           },
         }}
       >
-        <Typography sx={{ color: "#fff", fontSize: "18px !important" }}>
-          mr
-        </Typography>
+        <Typography sx={{ color: "#fff", fontSize: "18px !important" }}>mr</Typography>
       </Box>
     ),
     name: "Memory recall button retrieves the number you have in memory and places it in the display field.",
@@ -310,9 +303,7 @@ const memoryButtons = [
           },
         }}
       >
-        <Typography sx={{ color: "#fff", fontSize: "18px !important" }}>
-          m+
-        </Typography>
+        <Typography sx={{ color: "#fff", fontSize: "18px !important" }}>m+</Typography>
       </Box>
     ),
     name: "Memory plus button adds the number displayed to the contents of the memory.",
@@ -336,9 +327,7 @@ const memoryButtons = [
           },
         }}
       >
-        <Typography sx={{ color: "#fff", fontSize: "18px !important" }}>
-          m-
-        </Typography>
+        <Typography sx={{ color: "#fff", fontSize: "18px !important" }}>m-</Typography>
       </Box>
     ),
     name: "Memory minus button subtracts the number displayed from the contents of the memory.",
@@ -391,9 +380,7 @@ const FunctionButtons = [
           },
         }}
       >
-        <Typography sx={{ color: "#fff", fontSize: "18px !important" }}>
-          %
-        </Typography>
+        <Typography sx={{ color: "#fff", fontSize: "18px !important" }}>%</Typography>
       </Box>
     ),
     name: "Percent button is used to find the percentage of a number. Enter the percentage amount, click the % button, then enter the number you want the percentage of, and then click equals. i.e. 20% 125 = 25 where 25 is 20% of 125. Note: The percent function will also work if you enter the number first and then the percentage you want i.e. 125 %20 = 25.",
@@ -411,11 +398,7 @@ const HomeHelpAndTips = ({ isShowHelpContent, setIsShowHelpContent }) => {
 
       {isShowHelpContent && (
         <Box>
-          <HomeAccordion
-            title="Color Coding"
-            containerSx={accordionContainerStyle}
-            contentSx={accordionContentStyle}
-          />
+          <HomeAccordion title="Color Coding" containerSx={accordionContainerStyle} contentSx={accordionContentStyle} />
 
           <Box
             sx={{
@@ -462,16 +445,11 @@ const HomeHelpAndTips = ({ isShowHelpContent, setIsShowHelpContent }) => {
           </Box>
 
           <Box>
-            <HomeAccordion
-              title="Keyboard"
-              containerSx={accordionContainerStyle}
-              contentSx={accordionContentStyle}
-            />
+            <HomeAccordion title="Keyboard" containerSx={accordionContainerStyle} contentSx={accordionContentStyle} />
 
-            <Typography sx={{ paddingTop: "20px !important" }}>
-              You can use your numeric keypad to insert numbers along with the
-              keys 'enter', 'equals', 'backspace', 'delete', as well as the + -
-              * / keys.
+            <Typography sx={{ paddingTop: "20px !important", color: "var(--app_text_color) !important" }}>
+              You can use your numeric keypad to insert numbers along with the keys 'enter', 'equals', 'backspace',
+              'delete', as well as the + - * / keys.
             </Typography>
           </Box>
 
@@ -482,10 +460,9 @@ const HomeHelpAndTips = ({ isShowHelpContent, setIsShowHelpContent }) => {
               contentSx={accordionContentStyle}
             />
 
-            <Typography sx={{ paddingTop: "6px !important" }}>
-              All calculations are saved on the tape. Click on any number or
-              operator on the tape and change it at any time. Hit equals and the
-              new result will appear.
+            <Typography sx={{ paddingTop: "6px !important", color: "var(--app_text_color) !important" }}>
+              All calculations are saved on the tape. Click on any number or operator on the tape and change it at any
+              time. Hit equals and the new result will appear.
             </Typography>
 
             <Box sx={{ paddingTop: "6px !important" }}>
@@ -509,9 +486,7 @@ const HomeHelpAndTips = ({ isShowHelpContent, setIsShowHelpContent }) => {
                       },
                     }}
                   >
-                    <PrintIcon
-                      sx={{ color: "#d7d7d7", fontSize: "22px !important" }}
-                    />
+                    <PrintIcon sx={{ color: "#d7d7d7", fontSize: "22px !important" }} />
                   </Box>
                 }
               />
@@ -527,14 +502,7 @@ const HomeHelpAndTips = ({ isShowHelpContent, setIsShowHelpContent }) => {
 
             <Box sx={{ paddingTop: "6px !important" }}>
               {ClearingButtonsContent.map((item, index) => {
-                return (
-                  <ColorCoding
-                    alignItems="center"
-                    key={index}
-                    label={item.name}
-                    icon={item.icon}
-                  />
-                );
+                return <ColorCoding alignItems="center" key={index} label={item.name} icon={item.icon} />;
               })}
             </Box>
           </Box>
@@ -548,14 +516,7 @@ const HomeHelpAndTips = ({ isShowHelpContent, setIsShowHelpContent }) => {
 
             <Box sx={{ paddingTop: "6px !important" }}>
               {memoryButtons.map((item, index) => {
-                return (
-                  <ColorCoding
-                    alignItems="center"
-                    key={index}
-                    label={item.name}
-                    icon={item.icon}
-                  />
-                );
+                return <ColorCoding alignItems="center" key={index} label={item.name} icon={item.icon} />;
               })}
             </Box>
           </Box>
@@ -569,14 +530,7 @@ const HomeHelpAndTips = ({ isShowHelpContent, setIsShowHelpContent }) => {
 
             <Box sx={{ paddingTop: "6px !important" }}>
               {FunctionButtons.map((item, index) => {
-                return (
-                  <ColorCoding
-                    alignItems="flex-start"
-                    key={index}
-                    label={item.name}
-                    icon={item.icon}
-                  />
-                );
+                return <ColorCoding alignItems="flex-start" key={index} label={item.name} icon={item.icon} />;
               })}
             </Box>
           </Box>

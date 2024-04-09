@@ -1,0 +1,13 @@
+.ReuseableAccordion_ContentOne {
+  font-weight: bold;
+  color: var(--directory_bar_link_text_color);
+}
+
+.ReuseableAccordion_Container {
+  margin-top: 10px !important;
+}
+
+.ReuseableAccordion_ContentTwo {
+  margin-top: 4px !important;
+  color: var(--directory_bar_link_text_color);
+}

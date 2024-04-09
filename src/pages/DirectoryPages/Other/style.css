@@ -1,0 +1,7 @@
+.Other_Container {
+  background-color: var(--body_background);
+}
+
+.Other_Content_Container {
+  padding: 6rem 2rem 15rem 1rem !important;
+}

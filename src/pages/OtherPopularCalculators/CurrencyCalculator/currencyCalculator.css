@@ -1,0 +1,289 @@
+.CurrencyCalculator_Container {
+  background-color: var(--body_background);
+}
+
+.CurrencyCalculator_Head {
+  width: 100%;
+  height: 50px;
+}
+
+.CurrencyCalculator_Body {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  margin-left: 2em !important;
+}
+
+.CurrencyCalculator_Main {
+  display: block !important;
+  /* max-width: 100%; */
+  margin-top: 10px !important;
+  background: var(--card_bg) !important;
+  /* color: var(--font-color); */
+  padding: 20px !important;
+  border-radius: 1em !important;
+  margin-bottom: 20px !important;
+  margin-left: 2em !important;
+}
+
+.CurrencyCalculator_Text {
+  padding-left: 1.5em !important;
+  font: 145% "Trebuchet MS", sans-serif !important;
+  background: var(--color-secondary);
+  color: var(--app_text_color);
+}
+
+.CurrencyCalculator_Desc_Container {
+  padding: 0.5em 2em !important;
+  color: var(--app_text_color);
+}
+
+.CurrencyCalculator_Box_Container_Main {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.CurrencyCalculator_Box_One {
+  flex: 3 !important;
+  flex-wrap: wrap !important;
+  border-radius: 1em !important;
+  width: 100% !important;
+  position: relative !important;
+  background-color: var(--box_background) !important;
+  padding: 2em !important;
+  margin-right: 10px !important;
+}
+
+.CurrencyCalculator_Box_Two {
+  min-height: 100px !important;
+  order: 2 !important;
+  flex: 1 !important;
+  border-radius: 1em !important;
+  background-color: var(--box_background) !important;
+  padding: 18px !important;
+  padding-top: 40px !important;
+}
+
+.CurrencyCalculator_Box_Three {
+  margin-top: 10px !important;
+  background: var(--box_background) !important;
+  border-radius: 0.7em !important;
+}
+
+.CurrencyCalculator_Box_One_Body_Input_Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.CurrencyCalculator_Box_One_Body_Input {
+  margin-left: 10px !important;
+}
+
+.CurrencyCalculator_Box_One_Body_Input_Label {
+  display: flex;
+  align-items: center;
+  color: var(--app_text_color);
+  margin-bottom: 3px !important;
+  font: 100% "Trebuchet MS", sans-serif !important;
+}
+
+.CurrencyCalculator_SmallInput {
+  padding: 0 0.48em !important;
+  background: var(--card_bg) !important;
+  height: 28px !important;
+  width: 80px !important;
+  outline: none !important;
+  border: none !important;
+  color: var(--app_text_color) !important;
+  text-align: right !important;
+  white-space: nowwrap !important;
+  margin: 0 0.13em !important;
+  border-radius: 0.7rem !important;
+  text-align: right !important;
+  margin-top: 6px !important;
+}
+
+.CurrencyCalculator_SmallInput:hover {
+  outline: none !important;
+  border: none !important;
+}
+
+.CurrencyCalculator_SmallInput:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+.CurrencyCalculator_BigInput {
+  padding: 0 0.48em !important;
+  background: var(--card_bg) !important;
+  height: 28px !important;
+  width: 100% !important;
+  outline: none !important;
+  border: none !important;
+  color: var(--app_text_color) !important;
+  text-align: right !important;
+  border-radius: 0.7rem !important;
+  text-align: right !important;
+}
+
+.CurrencyCalculator_BigInput:hover {
+  outline: none !important;
+  border: none !important;
+}
+
+.CurrencyCalculator_BigInput:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+.CurrencyCalculator_Width {
+  width: 98% !important;
+  margin-top: 15px !important;
+}
+
+#CurrencyCalculator_Dropdown {
+  display: flex;
+  justify-content: space-between;
+  background: var(--card_bg) !important;
+  outline: none !important;
+  border: none !important;
+  color: var(--app_text_color) !important;
+  text-align: right !important;
+  white-space: nowwrap !important;
+  border-radius: 0.7rem !important;
+  margin-top: 10px !important;
+}
+
+#CurrencyCalculator_Dropdown option {
+  font-weight: normal !important;
+  display: block !important;
+  min-height: 1.2em !important;
+  padding: 10px 10px !important;
+  white-space: nowrap !important;
+  text-align: left !important;
+}
+
+.CurrencyCalculator_Results {
+  margin-top: 25px !important;
+}
+
+.CurrencyCalculator_Calc_Button {
+  border: 2px solid #0d6;
+  background: var(--color-secondary);
+  background: #0d6;
+  color: white;
+  width: 100%;
+  border-radius: 0.5em !important;
+  padding-bottom: 0.2em !important;
+  font: 117.5% "Trebuchet MS", sans-serif !important;
+  cursor: pointer;
+}
+
+.CurrencyCalculator_Calc_Button:hover {
+  color: #b3b3b3;
+}
+
+.CurrencyCalculator_Instructions_Button_Container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.CurrencyCalculator_Instructions_Button {
+  text-align: center;
+  color: var(--app_text_color);
+  font: 100% "Trebuchet MS", sans-serif;
+  margin-top: 1em;
+  position: relative;
+  border: none;
+  background: var(--box_background) !important;
+  margin-top: 25px !important;
+  cursor: pointer;
+}
+
+.CurrencyCalculator_Box_Two_Heading_One {
+  padding: 20px !important;
+  padding-left: 0px !important;
+  color: var(--app_text_color);
+  font-weight: bolder;
+}
+
+.CurrencyCalculator_Box_Two_Heading_Two {
+  padding-left: 1em !important;
+  padding-top: 20px !important;
+}
+
+li {
+  padding-bottom: 5px !important;
+  color: var(--app_text_color) !important;
+}
+
+a {
+  font-weight: bolder;
+  cursor: pointer;
+  color: var(--app_text_color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.CurrencyCalculator_Box_Three_Button {
+  text-decoration: none !important;
+  background: var(--box_background) !important;
+  border: none !important;
+  outline: none !important;
+  cursor: pointer;
+  padding: 15px 0px 10px 15px !important;
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+  color: var(--app_text_color) !important;
+  display: flex;
+  align-items: center;
+}
+
+.CurrencyCalculator_Box_Three_Button_Two {
+  text-decoration: none !important;
+  background: var(--box_background) !important;
+  border: none !important;
+  outline: none !important;
+  cursor: pointer;
+  padding: 0px 0px 10px 15px !important;
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+  color: var(--app_text_color) !important;
+  display: flex;
+  align-items: center;
+}
+
+.CurrencyCalculator_Box_Three_Button_Icon {
+  color: #ff0000 !important;
+}
+
+@media screen and (max-width: 1020px) {
+  .CurrencyCalculator_Body {
+    margin-left: 0 !important;
+  }
+
+  .CurrencyCalculator_Main {
+    margin-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 796px) {
+  .CurrencyCalculator_Box_Container_Main {
+    display: block !important;
+  }
+
+  .CurrencyCalculator_Main {
+    margin: 20px !important;
+  }
+
+  .CurrencyCalculator_Box_One {
+    width: auto !important;
+    margin-bottom: 10px !important;
+  }
+}

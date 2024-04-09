@@ -26,6 +26,16 @@
   /* footer accordion  */
   --footer_bg: #dee2e6 !important;
   --footer_text: rgb(72 72 72);
+
+  /* directory */
+  --directory_headings_bar-bg: #bbbec1;
+  --directory_bar_link_text_color: #000000;
+
+  /* Currency calculator */
+  --card_bg: #dee2e6;
+
+  /* coverters calculators headers pages  */
+  --box_background: #fff;
 }
 
 [data-theme="dark"] {
@@ -44,18 +54,28 @@
   --home_calc_input_bg: #232526;
   --home_calc_input_bg_Main: #3a3b3c;
 
-   /* home calc  */
-   --calc_input_bg: #3a3b3d;
+  /* home calc  */
+  --calc_input_bg: #3a3b3d;
 
-    /* home accordion  */
+  /* home accordion  */
   --accordion_bg: rgb(72 72 72);
 
-    /* heading bar */
+  /* heading bar */
   --heading_bar_bg: rgb(52 51 51);
 
-   /* footer accordion  */
+  /* footer accordion  */
   --footer_bg: #3a3b3d !important;
   --footer_text: rgb(72 72 72);
+
+  /* directory */
+  --directory_headings_bar-bg: #484848;
+  --directory_bar_link_text_color: #fff;
+
+  /* Currency calculator */
+  --card_bg: #3a3b3c;
+
+  /* coverters calculators headers pages  */
+  --box_background: #18191a;
 }
 
 * {
